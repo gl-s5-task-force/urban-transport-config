@@ -1,0 +1,24 @@
+services:
+    gateway:
+        port: 8080
+        host: localhost
+    auth:
+        port: 8081
+        host: localhost
+    user:
+        port: 8082
+        host: localhost
+    ticket:
+        port: 8083
+        host: localhost
+    route-schedule:
+        port: 8084
+        host: localhost
+    bus-geolocation:
+        port: 8085
+        host: localhost
+    notification:
+        port: 8086
+        host: localhost
+    
+    
