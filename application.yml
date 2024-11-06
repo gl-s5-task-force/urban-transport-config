@@ -32,6 +32,7 @@ services:
         host: localhost
         username: guest
         password: guest
-
-    
+        queue-name: notification_queue
+        exchange-name: notification_exchange
+        routing-key: notification_routing_key
     
