@@ -1,3 +1,6 @@
+project:
+    group: ma.wayfare
+
 services:
     gateway:
         port: 8080
