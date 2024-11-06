@@ -36,4 +36,5 @@ services:
         json-queue-name: notification_json_queue
         exchange-name: notification_exchange
         routing-key: notification_routing_key
+        json-routing-key: notification_json_routing_key
     
