@@ -30,6 +30,8 @@ services:
         port: 5672
         management-port: 15672
         host: localhost
+        username: guest
+        password: guest
 
     
     
