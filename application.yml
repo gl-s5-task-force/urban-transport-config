@@ -33,6 +33,7 @@ services:
         username: guest
         password: guest
         queue-name: notification_queue
+        json-queue-name: notification_json_queue
         exchange-name: notification_exchange
         routing-key: notification_routing_key
     
