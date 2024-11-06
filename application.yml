@@ -2,6 +2,9 @@ project-metadata:
     group: ma.wayfare
 
 services:
+    config:
+        port: 8888
+        host: localhost
     gateway:
         port: 8080
         host: localhost
@@ -23,5 +26,10 @@ services:
     notification:
         port: 8086
         host: localhost
+    rabbitmq:
+        port: 5672
+        management-port: 15672
+        host: localhost
+
     
     
