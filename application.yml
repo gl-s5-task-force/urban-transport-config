@@ -26,6 +26,14 @@ services:
     notification:
         port: 8086
         host: localhost
+        db:
+            host: localhost
+            port: 3306
+            username: root
+            password: root
+            database: wayfare_notifications
+            driver: com.mysql.cj.jdbc.Driver
+            dialect: org.hibernate.dialect.MySQL5Dialect
     rabbitmq:
         port: 5672
         management-port: 15672
@@ -37,4 +45,3 @@ services:
         exchange-name: notification_exchange
         routing-key: notification_routing_key
         json-routing-key: notification_json_routing_key
-    
