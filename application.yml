@@ -27,13 +27,10 @@ services:
         port: 8086
         host: localhost
         db:
-            host: localhost
-            port: 3306
+            url: jdbc:mysql://localhost:3306/wayfare_notifications?createDatabaseIfNotExist=true
             username: root
             password: password
-            database: wayfare_notifications
             driver: com.mysql.cj.jdbc.Driver
-            dialect: org.hibernate.dialect.MySQL5Dialect
     rabbitmq:
         port: 5672
         management-port: 15672
