@@ -30,7 +30,7 @@ services:
             host: localhost
             port: 3306
             username: root
-            password: root
+            password: password
             database: wayfare_notifications
             driver: com.mysql.cj.jdbc.Driver
             dialect: org.hibernate.dialect.MySQL5Dialect
