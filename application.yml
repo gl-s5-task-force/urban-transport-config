@@ -5,6 +5,20 @@ services:
     config:
         port: 8888
         host: localhost
+    rabbitmq:
+        port: 5672
+        management-port: 15672
+        host: localhost
+        username: guest
+        password: guest
+        queue-name: notification_queue
+        json-queue-name: notification_json_queue
+        exchange-name: notification_exchange
+        routing-key: notification_routing_key
+        json-routing-key: notification_json_routing_key
+    assistant:
+        port: 5000
+        host: localhost
     gateway:
         port: 8080
         host: localhost
@@ -17,10 +31,14 @@ services:
     ticket:
         port: 8083
         host: localhost
-    route-schedule:
+    trip:
         port: 8084
         host: localhost
-    bus-geolocation:
+        db:
+            url: jdbc:mysql://localhost:5432/trip_management?createDatabaseIfNotExist=true
+            username: postgres
+            password: postgres
+    geolocation:
         port: 8085
         host: localhost
     notification:
@@ -31,14 +49,3 @@ services:
             username: root
             password: password
             driver: com.mysql.cj.jdbc.Driver
-    rabbitmq:
-        port: 5672
-        management-port: 15672
-        host: localhost
-        username: guest
-        password: guest
-        queue-name: notification_queue
-        json-queue-name: notification_json_queue
-        exchange-name: notification_exchange
-        routing-key: notification_routing_key
-        json-routing-key: notification_json_routing_key
