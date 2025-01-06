@@ -4,11 +4,11 @@ project-metadata:
 services:
     config-server:
         port: 8888
-        host: localhost
+        host: config-server
     rabbitmq:
         port: 5672
         management-port: 15672
-        host: localhost
+        host: rabbitmq
         username: guest
         password: guest
         queue-name: notification_queue
@@ -18,31 +18,31 @@ services:
         json-routing-key: notification_json_routing_key
     assistant:
         port: 5000
-        host: localhost
+        host: assistant
     gateway:
         port: 8080
-        host: localhost
+        host: gateway
     auth:
         port: 8081
-        host: localhost
+        host: auth
     user:
         port: 8082
-        host: localhost
+        host: user
     trip:
         port: 8084
-        host: localhost
+        host: trip
         db:
-            url: jdbc:mysql://localhost:5432/trip_management?createDatabaseIfNotExist=true
+            url: jdbc:mysql://postgres:5432/trip_management?createDatabaseIfNotExist=true
             username: postgres
             password: postgres
     geolocation:
         port: 8085
-        host: localhost
+        host: geolocation
     notification:
         port: 8086
-        host: localhost
+        host: notification
         db:
-            url: jdbc:mysql://localhost:3306/wayfare_notifications?createDatabaseIfNotExist=true
+            url: jdbc:mysql://mysql:3306/wayfare_notifications?createDatabaseIfNotExist=true
             username: root
             password: password
             driver: com.mysql.cj.jdbc.Driver
