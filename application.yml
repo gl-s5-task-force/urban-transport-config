@@ -43,6 +43,6 @@ services:
         host: localhost
         db:
             url: jdbc:mysql://localhost:3306/wayfare_notifications?createDatabaseIfNotExist=true
-            username: root
-            password: password
+            username: mysql
+            password: mysql
             driver: com.mysql.cj.jdbc.Driver
