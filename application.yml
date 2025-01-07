@@ -32,7 +32,7 @@ services:
         port: 8084
         host: localhost
         db:
-            url: jdbc:mysql://localhost:5432/trip_management?createDatabaseIfNotExist=true
+            url: jdbc:postgres://localhost:5432/trip_management?createDatabaseIfNotExist=true
             username: postgres
             password: postgres
     geolocation:

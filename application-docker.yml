@@ -32,7 +32,7 @@ services:
         port: 8084
         host: trip
         db:
-            url: jdbc:mysql://postgres:5432/trip_management?createDatabaseIfNotExist=true
+            url: jdbc:postgres://postgres:5432/trip_management?createDatabaseIfNotExist=true
             username: postgres
             password: postgres
     geolocation:
